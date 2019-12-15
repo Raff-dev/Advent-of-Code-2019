@@ -56,5 +56,3 @@ amp_mem={}
 outputs=[]
 print('Answer 1:',max(Answer([0,1,2,3,4])))
 print('Answer 2:',max(Answer([5,6,7,8,9])))
-
-#1474258
