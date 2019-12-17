@@ -1,9 +1,7 @@
 from itertools import *
 def diagnostics(mem,phase,phase_index,adress,id_input):
-	#print(phase_index,adress)
 	mode=[0 for _ in range(max(5,len(str(mem[adress]))))]
 	opcode=int(str(mem[adress])[-2:])
-	assert opcode in {0,1,2,3,4,5,6,7,8,99}
 	for i in range(len(str(mem[adress]))-2):
 		mode[i]=(int(str(mem[adress])[-i-3]))
 	if opcode == 1:
